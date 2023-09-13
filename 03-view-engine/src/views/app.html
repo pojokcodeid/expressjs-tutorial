@@ -1,0 +1,17 @@
+<%- include('header.html') %>
+<h1>Daftar Barang</h1>
+<table border="1" cellpadding="3" cellspacing="0">
+  <tr>
+    <th>No</th>
+    <th>Kode</th>
+    <th>Nama</th>
+  </tr>
+  <% data.forEach((row, no)=>{ %>
+  <tr>
+    <td><%= no +1 %></td>
+    <td><%= row.id %></td>
+    <td><%= row.nama %></td>
+  </tr>
+  <%}) %>
+</table>
+<%- include('footer.html') %>

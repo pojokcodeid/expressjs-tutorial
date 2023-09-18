@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="container col-50">
+    <h2 class="header">Input barang</h2>
+    <form action="/barangs" method="post" enctype="multipart/form-data">
+      <div class="row">
+        <div class="col-25">
+          <label for="nama_barang">Nama barang</label>
+        </div>
+        <div class="col-50">
+          <input type="text" id="nama_barang" name="nama_barang" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="jumlah">Jumlah</label>
+        </div>
+        <div class="col-25">
+          <input type="number" id="jumlah" name="jumlah" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="harga_satuan">Harga Saruan</label>
+        </div>
+        <div class="col-25">
+          <input type="number" id="harga_satuan" name="harga_satuan" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="kadaluarsa">Tanggal Kadaluarsa</label>
+        </div>
+        <div class="col-25">
+          <input type="date" id="kadaluarsa" name="kadaluarsa" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="attacment">Attacment</label>
+        </div>
+        <div class="col-25">
+          <input type="file" id="attacment" name="attacment" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">&nbsp;</div>
+        <div class="col-25">
+          <button type="submit" class="btn primary">Simpan</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

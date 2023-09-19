@@ -1,0 +1,39 @@
+<div class="row center">
+  <div class="container col-50">
+    <p><%= message %></p>
+    <h2 class="header">Register User</h2>
+    <form action="/signup" method="post">
+      <div class="row">
+        <div class="col-25">
+          <label for="nama">Nama Pengguna</label>
+        </div>
+        <div class="col-50">
+          <input type="text" id="nama" name="nama" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-50">
+          <input type="email" id="email" name="email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-50">
+          <input type="password" id="password" name="password" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">&nbsp;</div>
+        <div class="col-50">
+          <button type="submit" class="btn primary">Register</button>
+        </div>
+      </div>
+    </form>
+    <a href="/login">login</a>
+  </div>
+</div>

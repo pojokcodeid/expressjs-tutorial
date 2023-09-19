@@ -1,0 +1,31 @@
+<div class="row center">
+  <div class="container col-50">
+    <p><%= message %></p>
+    <h2 class="header">Login</h2>
+    <form action="/login" method="post">
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-50">
+          <input type="email" id="email" name="email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-50">
+          <input type="password" id="password" name="password" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">&nbsp;</div>
+        <div class="col-50">
+          <button type="submit" class="btn primary">Login</button>
+        </div>
+      </div>
+    </form>
+    <a href="/signup">signup</a>
+  </div>
+</div>

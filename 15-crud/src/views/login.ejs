@@ -1,0 +1,45 @@
+<% if(message.length > 0){ %>
+<script>
+  Swal.fire({
+    title: "<%= message[1] %>",
+    text: "<%= message[2] %>",
+    icon: "<%= message[0] %>",
+  });
+</script>
+<% } let email=""; let password=""; if(data){ email=data.email;
+password=data.password; } %>
+<div class="row center">
+  <div class="container vcenter col-25">
+    <h2 class="header">Login</h2>
+    <form action="/login" method="post">
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-50">
+          <input type="email" id="email" name="email" value="<%= email %>" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-50">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value="<%= password %>"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">&nbsp;</div>
+        <div class="col-50">
+          <button type="submit" class="btn primary">Login</button>
+        </div>
+      </div>
+    </form>
+    <a href="/signup">signup</a>
+  </div>
+</div>

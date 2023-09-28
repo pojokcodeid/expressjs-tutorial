@@ -1,0 +1,16 @@
+<% if(message.length > 0){ %>
+<script>
+  Swal.fire({
+    title: "<%= message[1] %>",
+    text: "<%= message[2] %>",
+    icon: "<%= message[0] %>",
+  });
+</script>
+<% } %>
+<div class="row">
+  <div class="container">
+    <h1>Halaman Utama</h1>
+    <p><%= data %></p>
+    <p><a href="/logout">Logout</a></p>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+ [LOGGER] 2023-09-29 08:55:24.206 PM error : uncaughtException: showReport is not defined
+ReferenceError: showReport is not defined
+    at file:///C:/expressjs/19-pdf-report/src/routes/barangRoute.js:13:29
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+ [LOGGER] 2023-09-29 08:56:53.003 PM error : uncaughtException: Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\expressjs\19-pdf-report\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:186:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)

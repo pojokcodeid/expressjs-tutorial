@@ -1,0 +1,11 @@
+ [LOGGER] 2023-09-30 09:41:23.023 PM error : uncaughtException: A Cell needs a Row
+Error: A Cell needs a Row
+    at new Cell (C:\expressjs\20-excel-report\node_modules\exceljs\lib\doc\cell.js:15:13)
+    at Row.getCellEx (C:\expressjs\20-excel-report\node_modules\exceljs\lib\doc\row.js:49:14)
+    at Worksheet.getCell (C:\expressjs\20-excel-report\node_modules\exceljs\lib\doc\worksheet.js:546:16)
+    at generateExcel (file:///C:/expressjs/20-excel-report/src/controllers/reportBarangController.js:111:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ [LOGGER] 2023-09-30 09:42:15.578 PM error : uncaughtException: worksheet.getCells is not a function
+TypeError: worksheet.getCells is not a function
+    at generateExcel (file:///C:/expressjs/20-excel-report/src/controllers/reportBarangController.js:111:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

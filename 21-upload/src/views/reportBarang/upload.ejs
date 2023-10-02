@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="container col-75">
+    <div class="header">
+      <h2>Upload Barang</h2>
+    </div>
+    <div class="row">
+      <form action="/barang/upload" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-25">
+            <label for="uploadfile">File Upload</label>
+          </div>
+          <div class="col-50">
+            <input
+              type="file"
+              name="uploadfile"
+              accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">&nbsp;</div>
+          <div class="col-50">
+            <button type="submit" class="btn primary">Upload</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Barang</title>
+  </head>
+  <body>
+    <h1>Data Barang</h1>
+    <table border="1" cellpadding="5" cellspacing="0" width="100%">
+      <tr>
+        <th>No</th>
+        <th>Nama Barang</th>
+        <th>Jumlah</th>
+        <th>Harga Satuan</th>
+        <th>Kadaluarsa</th>
+      </tr>
+      {{#each barangs}}
+      <tr>
+        <td>{{this.no}}</td>
+        <td>{{this.nama_barang}}</td>
+        <td>{{this.jumlah}}</td>
+        <td>{{this.harga_satuan}}</td>
+        <td>{{this.expire_date}}</td>
+      </tr>
+      {{/each}}
+    </table>
+  </body>
+</html>

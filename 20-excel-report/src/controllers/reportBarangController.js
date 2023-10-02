@@ -15,7 +15,7 @@ const showReport = (req, res, next) => {
   } catch (error) {
     next(
       new Error(
-        "controllers/reportBarangController.js:showReport - " + err.message
+        "controllers/reportBarangController.js:showReport - " + error.message
       )
     );
   }
@@ -81,7 +81,7 @@ const generatePdf = async (req, res, next) => {
   } catch (error) {
     next(
       new Error(
-        "controllers/reportBarangController.js:generatePdf - " + err.message
+        "controllers/reportBarangController.js:generatePdf - " + error.message
       )
     );
   }
@@ -106,7 +106,7 @@ const generateExcel = async (req, res, next) => {
     counter++;
   });
   let list = ["A", "B", "C", "D", "E"];
-  for (let i = 1; i <= counter; i++) {
+  for (let i = 0; i <= counter; i++) {
     list.forEach((item) => {
       worksheet.getCell(item + i).border = {
         top: { style: "thin" },
@@ -135,7 +135,7 @@ const generateExcel = async (req, res, next) => {
   } catch (error) {
     next(
       new Error(
-        "controllers/reportBarangController.js:generatePdf - " + err.message
+        "controllers/reportBarangController.js:generatePdf - " + error.message
       )
     );
   }

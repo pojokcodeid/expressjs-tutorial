@@ -167,8 +167,10 @@ const showUpload = (req, res, next) => {
     };
     res.render("reportBarang/upload", data);
   } catch (error) {
-    new Error(
-      "controllers/reportBarangController.js:showUpload - " + error.message
+    next(
+      new Error(
+        "controllers/reportBarangController.js:showUpload - " + error.message
+      )
     );
   }
 };
